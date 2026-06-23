@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-user-manual",
-  "version": "1.0.0",
-  "description": "User Manual & Help Center Generator — Analyze product UI/docs to auto-generate manuals, FAQs, troubleshooting guides",
+  "version": "1.0.1",
+  "description": "User Manual & Help Center Generator \u2014 Analyze product UI/docs to auto-generate manuals, FAQs, troubleshooting guides",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,22 +9,40 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-user-manual",
   "homepage": "https://cortexprism.io/marketplace/plugins/user-manual",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "manual_generate",
       "description": "Generate user manual from product analysis",
       "params": []
     },
-    { "name": "manual_create_faq", "description": "Create FAQ from support tickets", "params": [] },
+    {
+      "name": "manual_create_faq",
+      "description": "Create FAQ from support tickets",
+      "params": []
+    },
     {
       "name": "manual_update",
       "description": "Watch for changes and suggest updates",
       "params": []
     },
-    { "name": "manual_publish", "description": "Publish to Help Center platform", "params": [] }
+    {
+      "name": "manual_publish",
+      "description": "Publish to Help Center platform",
+      "params": []
+    }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
